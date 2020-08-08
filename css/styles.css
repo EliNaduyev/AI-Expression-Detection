@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+  height: 100%;
+  width: 100%;
+}
+
+canvas {position: absolute;}
+
+.container{
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  background-image:linear-gradient(rgba(3, 8, 32, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../pictures/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-container{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left-container h1{
+  color: rgb(246, 242, 248);
+  text-align: center;
+  padding: 10px;
+}
+
+.video-container{
+  height: 300px;
+  width: 500px;
+  display: flex;
+  margin:20px auto;
+}
+
+.text{
+  width: 500px;
+  color: white;
+  margin: 10px auto;
+  line-height: 20px;
+  font-size: 17px;
+}
+
+.text h2{
+  padding: 5px;
+  color: rgb(112, 83, 192);
+}
+.text p{padding: 5px;}
+
+#video{
+  border: 2px solid rgb(20, 10, 75);
+  background-image:linear-gradient(rgba(3, 8, 32, 0.2), rgba(0, 0, 0, 0.2)),
+  url("../pictures/face4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-container{
+  height: 100%;
+  width: 100%;
+}
+
+.analytics{
+  padding: 10px;
+  width: 55%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(2, 33, 69,0.8);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.expCounter{
+  color: rgb(165, 135, 212);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all ease-in-out;
+}
+
+.h1-show{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.analytics p{
+  color:rgb(240, 240, 240);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn{
+  height: 40px;
+  width: 200px;
+  border: 2px solid rgb(75, 126, 207);
+  background: transparent;
+  color: white;
+  transition: 0.4s all ease-in-out ;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn:hover{
+  color: rgb(118, 95, 218);
+  font-size: 15px;
+  background-color: rgba(64, 102, 190, 0.294);
+}
+
+.center{
+  height: 40px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.right-container-title{
+  color: rgb(235, 237, 241);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon{
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+

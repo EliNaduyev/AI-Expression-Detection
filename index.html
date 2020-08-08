@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Detection</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-container">
+        <div class="left-container">
+          <h1>Welcome to Face Detection</h1>
+          <div class="video-container">
+            <video id="video" height="300" width="500" autoplay muted></video>
+      
+          </div>
+          <div class="text">
+            <h2>Face API</h2>
+            <p>
+              A facial recognition system is a technology capable 
+              of identifying or verifying a person from a digital 
+              image or a video frame from a video source.<br>This 
+              project detects the age and facial expressions of 
+              the user and counts the various types of expressions 
+              for example happiness, sadness, anger, etc.
+              <br>By pressing on the "Analyze" button the updated data 
+              will be displayed.
+            </p>
+          </div>
+        </div>
+        <div class="right-container">
+          <h1 class="right-container-title">
+            <label>Analytics</label> 
+            <span class="material-icons icon">
+              insert_chart_outlined
+            </span>
+          </h1>
+
+          <div class="analytics">
+
+              <div class="box">
+                <h1 class='sad expCounter'>0</h1>
+                <p>Sad</p>
+              </div>
+
+              <div class="box">
+                <h1 class='angry expCounter'>0</h1>
+                <p>Angry</p>
+              </div>
+
+              <div class="box">
+                <h1 class='netural expCounter'>0</h1>
+                <p>Neutral</p>
+              </div>
+
+              <div class="box">
+                <h1 class='disgusted expCounter'>0</h1>
+                <p>Disgusted</p>
+              </div>
+
+              <div class="box">
+                <h1 class='fearful expCounter'>0</h1>
+                <p>Fearful</p>
+              </div>
+
+              <div class="box">
+                <h1 class='surprised expCounter'>0</h1>
+                <p>Surprised</p>
+              </div>
+
+              <div class="box">
+                <h1 class='happy expCounter'>0</h1>
+                <p>Happy</p>
+              </div>
+
+          </div>
+          <div class="center">
+            <button class="btn" onclick="showExpression()">Analyze</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/face-api.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
