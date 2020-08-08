@@ -21,7 +21,7 @@ The expression can be one of the following:
 
 Clone the repository:
 ```
-git clone https://github.com/MariaGarber/AI-Expression-Detection.git
+git clone https://github.com/EliNaduyev/AI-Expression-Detection.git
 ```
 Enter the clonned folder:
 ```
